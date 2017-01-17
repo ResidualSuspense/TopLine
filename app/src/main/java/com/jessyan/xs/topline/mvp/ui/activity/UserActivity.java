@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.jess.arms.base.DefaultAdapter;
 import com.jess.arms.utils.UiUtils;
+import com.jessyan.xs.topline.R;
 import com.jessyan.xs.topline.di.component.DaggerUserComponent;
 import com.jessyan.xs.topline.di.module.UserModule;
 import com.jessyan.xs.topline.mvp.contract.UserContract;
@@ -22,13 +23,11 @@ import com.tbruyelle.rxpermissions.RxPermissions;
 import butterknife.BindView;
 import common.AppComponent;
 import common.WEActivity;
-import me.jessyan.mvparms.demo.R;
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import timber.log.Timber;
 
-import static me.jessyan.mvparms.demo.R.id.SwipeRefreshLayout;
 
 
 public class UserActivity extends WEActivity<UserPresenter> implements UserContract.View, SwipeRefreshLayout.OnRefreshListener {
@@ -37,7 +36,7 @@ public class UserActivity extends WEActivity<UserPresenter> implements UserContr
     @BindView(R.id.recyclerView)
     RecyclerView mRecyclerView;
     @Nullable
-    @BindView(SwipeRefreshLayout)
+    @BindView(R.id.SwipeRefreshLayout)
     SwipeRefreshLayout mSwipeRefreshLayout;
 
     private Paginate mPaginate;
@@ -53,7 +52,7 @@ public class UserActivity extends WEActivity<UserPresenter> implements UserContr
                 .userModule(new UserModule(this))
                 .build()
                 .inject(this);
-        Toast.makeText(mWeApplication, "hello", Toast.LENGTH_SHORT).show();
+        Toast.makeText(mWeApplication, "hello,xs", Toast.LENGTH_SHORT).show();
     }
 
     @Override
