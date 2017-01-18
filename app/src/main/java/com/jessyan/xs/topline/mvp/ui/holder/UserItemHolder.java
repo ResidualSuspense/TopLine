@@ -9,11 +9,11 @@ import com.jakewharton.rxbinding.widget.RxTextView;
 import com.jess.arms.base.BaseHolder;
 import com.jess.arms.widget.imageloader.ImageLoader;
 import com.jess.arms.widget.imageloader.glide.GlideImageConfig;
+import com.jessyan.xs.topline.R;
+import com.jessyan.xs.topline.mvp.model.entity.User;
 
 import butterknife.BindView;
-import me.jessyan.mvparms.demo.R;
 import common.WEApplication;
-import com.jessyan.xs.topline.mvp.model.entity.User;
 import rx.Observable;
 
 /**
