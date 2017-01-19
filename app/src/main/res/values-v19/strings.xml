@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_read">阅读</string>
+    <string name="nav_search">发现</string>
+</resources>
