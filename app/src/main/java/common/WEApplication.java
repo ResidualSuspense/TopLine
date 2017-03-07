@@ -7,14 +7,13 @@ import com.jess.arms.base.BaseApplication;
 import com.jess.arms.di.module.GlobeConfigModule;
 import com.jess.arms.http.GlobeHttpHandler;
 import com.jess.arms.utils.UiUtils;
+import com.jessyan.xs.topline.BuildConfig;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import me.jessyan.mvparms.demo.BuildConfig;
 import com.jessyan.xs.topline.di.module.CacheModule;
 import com.jessyan.xs.topline.di.module.ServiceModule;
 import com.jessyan.xs.topline.mvp.model.api.Api;
